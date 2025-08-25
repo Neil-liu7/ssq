@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沈思齐 - 个人简历</title>
+    <meta name="description" content="沈思齐 - 计算机技术硕士，专注AI+生态、数字乡村、智慧农业等方向。掌握C/C++、Python、Java、Vue、PyTorch、TensorFlow等技术栈。">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+        .animate-fade-in { animation: fadeIn 0.6s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .nav-item { transition: color 0.3s ease; }
+        .nav-item:hover { color: #667eea; }
+        .skill-tag { transition: all 0.3s ease; }
+        .skill-tag:hover { background-color: #667eea; color: white; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="fixed top-0 w-full bg-white shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-gray-800">沈思齐</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="nav-item text-gray-700 hover:text-blue-600">关于我</a>
+                    <a href="#education" class="nav-item text-gray-700 hover:text-blue-600">教育背景</a>
+                    <a href="#skills" class="nav-item text-gray-700 hover:text-blue-600">专业技能</a>
+                    <a href="#projects" class="nav-item text-gray-700 hover:text-blue-600">项目经验</a>
+                    <a href="#awards" class="nav-item text-gray-700 hover:text-blue-600">荣誉奖项</a>
+                    <a href="#contact" class="nav-item text-gray-700 hover:text-blue-600">联系方式</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-blue-600">关于我</a>
+                <a href="#education" class="block px-3 py-2 text-gray-700 hover:text-blue-600">教育背景</a>
+                <a href="#skills" class="block px-3 py-2 text-gray-700 hover:text-blue-600">专业技能</a>
+                <a href="#projects" class="block px-3 py-2 text-gray-700 hover:text-blue-600">项目经验</a>
+                <a href="#awards" class="block px-3 py-2 text-gray-700 hover:text-blue-600">荣誉奖项</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-blue-600">联系方式</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="pt-16">
+        <!-- 英雄区域 -->
+        <section id="about" class="gradient-bg text-white py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center animate-fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">沈思齐</h1>
+                    <p class="text-xl md:text-2xl mb-6 text-blue-100">计算机技术硕士 | AI+生态 | 数字乡村</p>
+                    <div class="flex justify-center space-x-4 text-sm md:text-base">
+                        <span><i class="fas fa-map-marker-alt mr-2"></i>湖南岳阳</span>
+                        <span><i class="fas fa-birthday-cake mr-2"></i>2003.10.13</span>
+                        <span><i class="fas fa-graduation-cap mr-2"></i>电子科技大学</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 教育背景 -->
+        <section id="education" class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">教育背景</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-university text-2xl text-blue-600 mr-3"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">电子科技大学</h3>
+                                <p class="text-gray-600">计算机技术硕士</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">2025.09 - 至今</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-university text-2xl text-green-600 mr-3"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">南京林业大学</h3>
+                                <p class="text-gray-600">软件工程学士</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">2021.09 - 2025.06</p>
+                        <p class="text-sm text-gray-600 mt-2">GPA: 3.89 | 专业排名: 前3%</p>
+                        <p class="text-sm text-gray-600">CET4、CET6</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 专业技能 -->
+        <section id="skills" class="py-16 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">专业技能</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center">
+                            <i class="fas fa-code text-blue-600 mr-2"></i>
+                            编程语言
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">C/C++</span>
+                            <span class="skill-tag bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="skill-tag bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Java</span>
+                            <span class="skill-tag bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">汇编语言</span>
+                            <span class="skill-tag bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">SQL</span>
+                            <span class="skill-tag bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center">
+                            <i class="fas fa-tools text-green-600 mr-2"></i>
+                            技术框架
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Vue</span>
+                            <span class="skill-tag bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">PyTorch</span>
+                            <span class="skill-tag bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">TensorFlow</span>
+                            <span class="skill-tag bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Spring Boot</span>
+                            <span class="skill-tag bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目经验 -->
+        <section id="projects" class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">项目经验</h2>
+                <div class="space-y-8">
+                    <!-- 项目1 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                        <div class="flex items-start justify-between mb-4">
+                            <h3 class="text-xl font-semibold">基于小样本的遥感林木计数模型研究</h3>
+                            <span class="text-sm text-gray-500">2024.02 - 至今</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">提出少样本林木密度映射计数模型，在5个示范区验证，计数精度提升37.7%</p>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>研发交互式可视化平台，构建生态地图</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>形成"理论创新-技术突破-产业应用"完整链条</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>助力乡村环境治理与文化认同</li>
+                        </ul>
+                    </div>
+
+                    <!-- 项目2 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                        <div class="flex items-start justify-between mb-4">
+                            <h3 class="text-xl font-semibold">智慧农业与植物病虫害的智能生态检测系统</h3>
+                            <span class="text-sm text-gray-500">2023.11 - 2024.02</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">结合多种目标检测算法，诊断准确率达89.7%</p>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>覆盖12类主要作物病害监测</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>构建病虫害监测图谱</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>推动可持续农业发展模式</li>
+                        </ul>
+                    </div>
+
+                    <!-- 项目3 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                        <div class="flex items-start justify-between mb-4">
+                            <h3 class="text-xl font-semibold">"苏游通"小程序 - 苏州文旅数字化升级</h3>
+                            <span class="text-sm text-gray-500">2023.08 - 2023.09</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">数字文旅小程序，集成景点导览、文创推荐、游客互动等功能</p>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>探索AR、交互式可视化技术应用</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>重构传统文化叙事方式</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>推动文化遗产现代转译</li>
+                        </ul>
+                    </div>
+
+                    <!-- 项目4 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+                        <div class="flex items-start justify-between mb-4">
+                            <h3 class="text-xl font-semibold">新疆和田非遗与生态旅游融合的数字叙事项目</h3>
+                            <span class="text-sm text-gray-500">2025.04 - 2025.05</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">构建"一纹一景"生态叙事体系，开发旅游官网和小程序</p>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>研发自适应旅游路线生成系统</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>引入生成式AI与游戏化设计</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>为边疆文化振兴提供创新方案</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 荣誉奖项 -->
+        <section id="awards" class="py-16 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">荣誉奖项</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-lg p-4 text-center card-hover">
+                        <i class="fas fa-trophy text-3xl text-yellow-500 mb-2"></i>
+                        <h4 class="font-semibold">全国大学生英语竞赛二等奖</h4>
+                        <p class="text-sm text-gray-600">2022.10</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-4 text-center card-hover">
+                        <i class="fas fa-medal text-3xl text-blue-500 mb-2"></i>
+                        <h4 class="font-semibold">蓝桥杯江苏赛区一等奖</h4>
+                        <p class="text-sm text-gray-600">2024.04</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-4 text-center card-hover">
+                        <i class="fas fa-award text-3xl text-purple-500 mb-2"></i>
+                        <h4 class="font-semibold">MathorCup数学应用挑战赛二等奖</h4>
+                        <p class="text-sm text-gray-600">2024.04</p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600">本科期间连续获得"校三好学生"、"学科竞赛先进个人"等荣誉及奖学金</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系方式 -->
+        <section id="contact" class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">联系方式</h2>
+                <div class="bg-white rounded-lg shadow-lg p-8 max-w-2xl mx-auto">
+                    <div class="grid md:grid-cols-2 gap-6 text-center">
+                        <div class="flex items-center justify-center">
+                            <i class="fas fa-phone text-blue-600 text-xl mr-3"></i>
+                            <div>
+                                <p class="font-semibold">电话</p>
+                                <p class="text-gray-600">15200273932</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <i class="fas fa-envelope text-green-600 text-xl mr-3"></i>
+                            <div>
+                                <p class="font-semibold">邮箱</p>
+                                <p class="text-gray-600">958987477@qq.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hidden hover:bg-blue-700 transition-colors">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // 移动端菜单切换
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // 关闭移动端菜单
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // 返回顶部按钮
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.remove('hidden');
+            } else {
+                backToTopBtn.classList.add('hidden');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // 页面加载动画
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.card-hover').forEach((el, index) => {
+                el.style.animationDelay = `${index * 0.1}s`;
+                el.classList.add('animate-fade-in');
+            });
+        });
+    </script>
+</body>
+</html>
